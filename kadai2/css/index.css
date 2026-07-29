@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body{
+    background-color: beige;
+}
+
+header{
+    font-size: 24px;
+    
+
+}
+
+header{
+    border: solid 2px black;
+    padding: 2px 2px;
+    border-radius: 10px;
+    background: linear-gradient(white,rgb(57, 229, 5));
+
+}
+
+h1{
+    border-bottom: dashed 2px black;
+}
+
+.con{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    gap: 1em;
+
+    grid-template-areas:
+        "header-A header-A"
+        "aside-A main-A"
+        "footer-A footer-A";
+}
+header{
+   
+    grid-area: header-A;
+    padding: 1em;
+    text-align: center;
+}
+
+aside{
+    
+    grid-area: aside-A;
+    
+}
+
+main{
+    
+    grid-area: main-A;
+    
+}
+
+footer{
+    
+    
+    grid-area: footer-A;
+   
+}
+
+a:hover{
+    font-size: 2em;
+}
