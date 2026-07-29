@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body{
+    background-color: antiquewhite;
+    
+}
+
+header{
+    font-size: 24px;
+    
+
+}
+
+header{
+    border: solid 2px black;
+    padding: 2px 2px;
+    border-radius: 10px;
+    background: linear-gradient(white,brown);
+
+}
+
+h1{
+    border-bottom: 2px dashed black;
+    
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+
+    grid-template-areas:
+        "header-A header-A"
+        "aside-A main-A"
+        "footer-A footer-A";
+}
+
+header {
+    background-color: aquamarine;
+    grid-area: header-A;
+}
+
+aside {
+    grid-area: aside-A;
+}
+
+main {
+    grid-area: main-A;
+}
+
+a:hover{
+    font-size: 2em;
+}
